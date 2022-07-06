@@ -1,0 +1,135 @@
+<style>
+    
+    body{
+      background-image: url("/images/airindia.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .maincontainer{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      /* background: url("/images/airindia.jpg"); 
+      background-repeat: no-repeat;
+      background-size: cover; */
+      /* background-position: center; */
+  
+      
+    
+    }
+    .root{
+    width: 600px;
+    height: auto;
+    background: #fff;
+    
+    padding: 50px;
+    margin: 80px 0  0 80px;
+    margin-top: 100px;
+    border-radius: 100px;
+    }
+   
+    .heading1{
+    color: gray;
+    
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Syne Mono;
+    
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+    
+    
+    }
+    
+    </style>
+    
+    <html>
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+          
+          
+       
+    </head>
+    <body>
+      
+      <div class="maincontainer">
+      
+       <div class="root">
+         <form action="/admin/checkadminlogin" method="post">
+        <div class="heading1">
+         <span><img src="/images/airjet.png" width="50" ></span> &nbsp; Flight Enquiry System
+        </div>
+      <div class="row">
+          <div class="col s12" style="display: flex; justify-content: center;">
+        <span><img src="/images/logo2.png" width="150" alt="logo"></span>
+        </div>
+      </div>
+        
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field ">
+                    <i class="material-icons prefix">email</i>
+                    <input id="icon_em" name="userid" type="email" class="validate">
+                    <label for="icon_em">Email</label>
+                  </div>
+
+                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                              <div class="input-field">
+                                <i class="material-icons prefix">search</i>
+                                <input id="icon_ps" name="password" type="password" class="validate">
+                       <label for="icon_ps">password</label>
+                                
+                              
+                              </div>
+                
+                                </div>
+                             
+                    
+                                    </div>
+                                    
+                                
+    
+                 
+             
+              <div class="row">
+                <div class="col s4" style="display: flex; justify-content: center;">
+              
+  <button class="btn waves-effect waves-light" type="submit" name="action">Login
+    <i class="material-icons right">send</i>
+  </button>
+  </div>
+  <div class="col s8" style="font-size: 16px; font-weight: bold; display: flex; justify-content: left; color:  red;">
+     <h5><%=msg %></h5>
+    </div>
+  
+
+  
+  </div>
+      </form>
+    </div> 
+    </div>
+  
+     
+    </body>
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    </html>
+    
+    
